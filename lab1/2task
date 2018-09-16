@@ -1,0 +1,5 @@
+#!/bin/bash
+> ~/123.b
+cp ~/*.b ~/cat1/cat8
+chmod a=r *.b
+chmod 010 *.b 

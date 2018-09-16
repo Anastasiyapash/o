@@ -1,0 +1,2 @@
+#!/bin/bash
+cd $HOME/documents/5sem/os/lab1; sort /etc/passwd >  passwd.orig

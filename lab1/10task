@@ -1,0 +1,12 @@
+#!/bin/bash
+if [[ -f $1 ]]
+then
+  if [[ -f $2 ]]
+  then
+    cat $1 >> $2
+  fi
+fi
+if [[ -n $3 ]]
+then
+  who > $3
+fi

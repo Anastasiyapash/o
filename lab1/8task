@@ -1,0 +1,8 @@
+#!/bin/bash
+#$1- path and name1
+#$2 - file
+files=" "
+  for file in "$@"; do
+      files="$files $file" #add new file in before(prev) file
+  done
+tar -czf  $files

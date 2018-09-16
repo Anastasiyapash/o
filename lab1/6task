@@ -1,0 +1,23 @@
+#!/bin/bash
+if [[ $1 = "-f" ]]
+then
+  if [[ -f $2 ]]
+  then
+    FILE=$2
+    cat $2
+  else
+    FILE=".bashrc"
+  fi
+  if [[ $3 = "-c" ]]
+  then
+    COMPIL="gcc $2"
+    eval $COMPIL
+    if [[ $4 = "-r" ]]
+    then
+      RUN="./a.out"
+      eval $RUN
+    fi
+  fi
+else
+  printf "Enter -f\n"
+fi

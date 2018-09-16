@@ -1,0 +1,8 @@
+#!/bin/bash
+printf "Enter command \n"
+read cqer
+if [[ -z $cqer ]]; then
+  echo "Error! Enter command!"
+else
+  eval $cqer
+fi

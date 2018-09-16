@@ -1,0 +1,16 @@
+#!/bin/bash
+#-c=copy
+#-d=delete
+#-r=rename
+if [[ $1 = "-d" ]]
+then
+  rm $2
+fi
+if [[ $1 = "-c" ]]
+then
+  cp $2 $3
+fi
+if [[ $1 = "-r" ]]
+then
+  mv $2 $3
+fi

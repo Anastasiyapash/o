@@ -1,0 +1,10 @@
+#!/bin/bash
+ls -1 *.c
+read par1
+if [[ -f $par1 ]]
+then
+  eval "gcc $par1"
+  eval "./a.out"
+else
+  printf "Error!\n"
+fi
