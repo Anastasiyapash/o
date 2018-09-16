@@ -1,0 +1,10 @@
+#!/bin/bash
+cd
+mkdir cat1 && cd cat1
+mkdir cat2 && mkdir cat3
+cd cat2 && mkdir cat3
+cd ~/cat1/cat3/ && mkdir cat4
+cd ~/cat1/cat2 && mkdir cat5
+cd ~/cat1/cat2/cat3 && mkdir cat6 && mkdir cat7
+cd ~/cat1 && mkdir cat8
+ln -s ~/cat1/cat2/cat3/cat6 ~/cat1/cat8
